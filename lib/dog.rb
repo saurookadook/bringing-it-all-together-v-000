@@ -42,8 +42,9 @@ class Dog
   end
 
   def self.create(attr_hash)
-    binding.pry
-    dog = Dog.new(attr_hash[:name], attr_hash[:breed])
+    name = attr_hash[:name]
+    breed = attr_hash[:breed]
+    dog = Dog.new(name, breed)
     dog.save
     dog
   end
